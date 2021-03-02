@@ -1,0 +1,102 @@
+header:
+    title: Welcome to TechNetics!
+    text: We make it happen, to change the future.
+    button: Tell Me More
+    buttonlink: "#timeline"
+
+services:
+    title: "Services"
+    text: "Greetings, people.  We are determined in developing your skills.."
+    section: services
+    list:
+       - title: "E-learning"
+         desc: "We are organizing multifaceted courses, workshops and seminars to further develop these talents."
+         icon: fas fa-graduation-cap
+#      - title: "E-Commerce"
+#        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+#        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+#      - title: "Responsive Design"
+#        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+#        icon: fas fa-laptop
+#      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
+#        desc: "Your description here, full **Markdown** support"
+#        icon: fab fa-markdown
+
+events:
+    title: "Events"
+    text: "Our Events"
+    section: events
+    closebutton: "Close Event"
+
+timeline:
+    title: "About"
+    text: "Who Are We?"
+    section: timeline
+    events:
+      - title: "Our Humble Beginnings"
+        year: "2020"
+        desc: "Founded in 2020, September."
+        image: assets/img/icons/android-icon-192x192.png #assets/img/timeline/1.jpg
+        alt: Our Humble Beginnings
+        align: left
+      - title: T week challenge
+        year: 1 to 25 December 2020
+        desc: 1st Event Executed from 1 December to 25 December
+        image: assets/img/timeline/2.jpg
+        alt: T week challenge
+        align: right
+      - title: TechEmpire 1.0 
+        year: 14 -18 January 2021
+        desc: 2nd Event Executed from 14 -18 January 2021
+        image: assets/img/icons/android-icon-192x192.png
+        alt: TechEmpire 1.0 
+        align: left
+    end: "Be Part <br> of Our <br> Story!"
+
+about:
+    title: "About Us"
+    text: "TechNetics is a multi-purpose community centered around mutual self-improvement in tech enthusiasts with a focus on aim and talent. Our motto: We make it happen ,to change the future"
+    section: about
+
+clients:
+    section: clients
+    max-height: 100px
+    horizontal-scrolling: "yes" #"yes/no"
+#       - title: ""
+#         url:
+#         logo: assets/img/clients/
+
+team:
+    title: "OUR AMAZING TEAM"
+    text: "Our Respective Panel Members."
+    subtext: Here is our panel Members of **TechNetics** They are working with us for long time and supporting us from the base!
+    section: team
+    people:
+      - name: "Abrar Jahin"
+        role: "Web Designer"
+        image: assets/img/team/abrar.jpg
+        social:
+          - url: https://twitter.com/aj_palok
+            icon: fab fa-twitter
+          - url: https://facebook.com/aj.palok5
+            icon: fab fa-facebook-f
+contact:
+    title: "Contact Us"
+    text: "Contact from here..."
+    section: contact
+
+footer:
+    legal: "Privacy Policy"
+    social:
+      - url: https://facebook.com/techneticsofficial
+        icon: "fab fa-facebook-f"
+      - url: https://instagram.com/techneticsofficial
+        icon: "fab fa-instagram"
+      # - url: https://github.com/
+      #   icon: "fab fa-github"
+      # - url: https://twitter.com
+      #   icon: "fab fa-twitter"
+      # - url: https://linkedin.com
+      #   icon: "fab fa-linkedin-in"
+
+# {{ site.data.sitetext.ex.ex | markdownify | default: example }}

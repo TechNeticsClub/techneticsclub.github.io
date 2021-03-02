@@ -1,0 +1,18 @@
+nav:
+  - title: "Services"
+    section: services
+
+  - title: "Events"
+    section: events
+
+  - title: "About"
+    section: timeline
+
+#  - title: "Team"
+#    section: team
+
+  - title: "Contact"
+    section: contact
+
+#  - title: "blog"
+#    url: https://blog.2haas.com

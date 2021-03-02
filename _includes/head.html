@@ -1,0 +1,91 @@
+<head>
+  {%- assign image = '' -%}
+  {%- if page.image -%}
+      {%- assign image = page.image -%}
+  {%- else -%}
+      {%- assign image = "/assets/img/blog-image.jpg" | prepend: site.baseurl | prepend: site.url -%}
+  {%- endif -%}
+
+{% if site.analytics.google %}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+	gtag('config', '{{ site.analytics.google }}');
+  </script>
+  <!-- End Google Analytics -->
+{% endif %}
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.author }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <title>{% if page.title %}{{ page.title | append: " | " | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this theme -->
+  <link href="assets/css/expertiseum.css" rel="stylesheet">
+
+  <!-- Page container change top padding when nav shrinks -->
+  {% if page.layout == "page" %}
+  <style>
+    #pagecontainer {padding-top: 150px;}
+	@media only screen and (max-width: 991px) {
+	  #pagecontainer {padding-top: 100px;}
+	}
+  </style>
+  {% endif %}
+
+
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="fb:app_id" content="{{site.fbappid}}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:url" content="{{ site.baseurl | prepend: site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ image }}"/>
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="article:publisher" content="https://www.facebook.com/Expertiseum" />
+  <meta property="article:published_time" content="{%- if page.date -%}{{ page.date }}{%- else -%}{{ 'now' | date: "%B %d, %Y" }}{%- endif -%}" />
+  <meta property="og:description" content="{%- if page.description -%}{{ page.description }}{%- else -%}{{ site.description }}{%- endif -%}">
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="{%- if page.title -%}{{ page.title }}{%- else -%}{{ site.title }}{%- endif -%}">
+  <meta name="twitter:description" content="{%- if page.description -%}{{ page.description }}{%- else -%}{{ site.description }}{%- endif -%}">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="shortcut icon" href="{{ site.baseurl | prepend: site.url }}/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="{{ site.url }}/assets/img/icons/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ site.url to}}/assets/img/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl | prepend: site.url }}/assets/img/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl | prepend: site.url }}/assets/img/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl | prepend: site.url }}/assets/img/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl | prepend: site.url }}/assets/img/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl | prepend: site.url }}/assets/img/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl | prepend: site.url }}/assets/img/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl | prepend: site.url }}/assets/img/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="{{ site.baseurl | prepend: site.url }}/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl | prepend: site.url }}/assets/img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{ site.baseurl | prepend: site.url }}/assets/img/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl | prepend: site.url }}/assets/img/icons/favicon-16x16.png">
+  <link rel="manifest" href="{{ site.url }}{{ site.baseurl }}/manifest.json">
+  <meta name="msapplication-TileColor" content="#0076fd">
+  <meta name="msapplication-TileImage" content="{{ site.baseurl | prepend: site.url }}/assets/img/icons/ms-icon-180x180.png">
+  <meta name="theme-color" content="#0076fd">
+  <link rel="canonical" href="{{ site.baseurl | prepend: site.url }}{{ page.url }}" />
+
+
+</head>
