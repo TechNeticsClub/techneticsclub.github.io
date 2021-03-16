@@ -28,17 +28,18 @@
   <title>{% if page.title %}{{ page.title | append: " | " | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="/assets/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this theme -->
-  <link href="assets/css/expertiseum.css" rel="stylesheet">
+  <link href="{{ "/assets/css/technetics.css" | prepend:  site.baseurl | prepend: site.url }}" rel="stylesheet">
 
   <!-- Page container change top padding when nav shrinks -->
   {% if page.layout == "page" %}
@@ -58,7 +59,7 @@
   <meta property="og:url" content="{{ site.baseurl | prepend: site.url }}{{ page.url }}">
   <meta property="og:image" content="{{ image }}"/>
   <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="article:publisher" content="https://www.facebook.com/Expertiseum" />
+  <meta property="article:publisher" content="https://www.facebook.com/2haas" />
   <meta property="article:published_time" content="{%- if page.date -%}{{ page.date }}{%- else -%}{{ 'now' | date: "%B %d, %Y" }}{%- endif -%}" />
   <meta property="og:description" content="{%- if page.description -%}{{ page.description }}{%- else -%}{{ site.description }}{%- endif -%}">
 

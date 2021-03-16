@@ -1,27 +1,21 @@
 header:
     title: Welcome to TechNetics!
     text: We make it happen, to change the future.
-    button: Tell Me More
-    buttonlink: "#timeline"
+    button: Go To The Futere
+    buttonlink: "/#events"
 
-services:
-    title: "Services"
-    text: "Greetings, people.  We are determined in developing your skills.."
-    section: services
-    list:
-       - title: "E-learning"
-         desc: "We are organizing multifaceted courses, workshops and seminars to further develop these talents."
-         icon: fas fa-graduation-cap
-#      - title: "E-Commerce"
-#        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-#        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-#      - title: "Responsive Design"
-#        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-#        icon: fas fa-laptop
-#      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-#        desc: "Your description here, full **Markdown** support"
-#        icon: fab fa-markdown
-
+slides:
+    - headline: "Card title"
+      details: "Some quick example text to build on the card title and make up the bulk of the card's content."
+      image: https://placeimg.com/640/480/tech/sepia
+      transition: true # This is mandatory for only one item
+    - headline: "Card title"
+      details: "Some quick example text to build on the card title and make up the bulk of the card's content."
+      image: https://placeimg.com/640/480/tech
+    - headline: "Card title"
+      details: "Some quick example text to build on the card title and make up the bulk of the card's content."
+      image: https://placeimg.com/640/480/tech/grayscale
+      
 events:
     title: "Events"
     text: "Our Events"
@@ -29,42 +23,107 @@ events:
     closebutton: "Close Event"
 
 timeline:
-    title: "About"
-    text: "Who Are We?"
+    title: "Timeline"
+    text: "What We Have Done?"
     section: timeline
     events:
       - title: "Our Humble Beginnings"
         year: "2020"
         desc: "Founded in 2020, September."
-        image: assets/img/icons/android-icon-192x192.png #assets/img/timeline/1.jpg
+        image: /assets/img/icons/android-icon-192x192.png #assets/img/timeline/1.jpg
         alt: Our Humble Beginnings
         align: left
       - title: T week challenge
         year: 1 to 25 December 2020
         desc: 1st Event Executed from 1 December to 25 December
-        image: assets/img/timeline/2.jpg
+        image: /assets/img/timeline/tweek.jpg
         alt: T week challenge
         align: right
       - title: TechEmpire 1.0 
-        year: 14 -18 January 2021
+        year: 14 to 18 January 2021
         desc: 2nd Event Executed from 14 -18 January 2021
-        image: assets/img/icons/android-icon-192x192.png
+        image: /assets/img/timeline/techempire.jpg
         alt: TechEmpire 1.0 
         align: left
     end: "Be Part <br> of Our <br> Story!"
 
-about:
-    title: "About Us"
-    text: "TechNetics is a multi-purpose community centered around mutual self-improvement in tech enthusiasts with a focus on aim and talent. Our motto: We make it happen ,to change the future"
-    section: about
-
 clients:
-    section: clients
+    title: "Partners"
+    text: "Who Are Supporting Us?"
+    section: partners
     max-height: 100px
-    horizontal-scrolling: "yes" #"yes/no"
+    horizontal-scrolling: "" #"yes/no"
+    list:
+      - title: "2HAAS"
+        url: https://2haas.com/
+        logo: https://2haas.com/assets/img/icons/android-icon-192x192.png
+      - title: "Admission Assistant"
+        url: 
+        logo: /assets/img/partners/AA-Logo.png
+      - title: "Cultural Club"
+        url: 
+        logo: /assets/img/partners/Cultural Club.png
+      - title: "GBCS"
+        url: 
+        logo: /assets/img/partners/GBCS.PNG
+      - title: "IERCLC"
+        url: 
+        logo: /assets/img/partners/IERCLC.png
+      - title: "IITSEC"
+        url: 
+        logo: /assets/img/partners/IITSEC logo black.png
+      - title: "Interactive Cares"
+        url: 
+        logo: /assets/img/partners/Interactive Cares.png
+      - title: "Potrait"
+        url: 
+        logo: /assets/img/partners/Potrait.jpg
+      - title: "SHKSC"
+        url: 
+        logo: /assets/img/partners/SHKSC.jpeg
+      - title: "gaming with mehzabin"
+        url: 
+        logo: /assets/img/partners/gaming with mehzabin.jpg
+      - title: "pfy"
+        url: 
+        logo: /assets/img/partners/pfy.jpg
+      - title: "sp"
+        url: 
+        logo: /assets/img/partners/sp.png
+      - title: "lge"
+        url: 
+        logo: /assets/img/partners/lge.jpg
+      - title: "jmc logo"
+        url: 
+        logo: /assets/img/partners/jmc logo_1024.png
+      - title: "gkn"
+        url: 
+        logo: /assets/img/partners/gkn.png
+      - title: "bbs"
+        url: 
+        logo: /assets/img/partners/bbs.png
+      - title: "shadow"
+        url: http://shadow.com.bd
+        logo: /assets/img/partners/shadow.png
+      - title: "SM"
+        url: 
+        logo: /assets/img/partners/SM-Logo-02-01.png
+      - title: "sp"
+        url: 
+        logo: /assets/img/partners/sp.png
+      - title: "Rono Ahmed-Official"
+        url: 
+        logo: /assets/img/partners/Rono Ahmed-Official Logo_white.png
+      - title: "ssf"
+        url: 
+        logo: /assets/img/partners/ssf.png
+      - title: "ZE green"
+        url: 
+        logo: /assets/img/partners/ZE green.png
 #       - title: ""
 #         url:
-#         logo: assets/img/clients/
+#         logo: /assets/img/clients/
+
 
 team:
     title: "OUR AMAZING TEAM"
@@ -74,7 +133,7 @@ team:
     people:
       - name: "Abrar Jahin"
         role: "Web Designer"
-        image: assets/img/team/abrar.jpg
+        image: /assets/img/team/abrar.jpg
         social:
           - url: https://twitter.com/aj_palok
             icon: fab fa-twitter
