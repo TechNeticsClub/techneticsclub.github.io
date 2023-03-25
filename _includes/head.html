@@ -1,4 +1,3 @@
-<head>
   {%- assign image = '' -%}
   {%- if page.image -%}
       {%- assign image = page.image -%}
@@ -27,30 +26,6 @@
 
   <title>{% if page.title %}{{ page.title | append: " | " | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-  <!-- Custom styles for this theme -->
-  <link href="assets/css/expertiseum.css" rel="stylesheet">
-
-  <!-- Page container change top padding when nav shrinks -->
-  {% if page.layout == "page" %}
-  <style>
-    #pagecontainer {padding-top: 150px;}
-	@media only screen and (max-width: 991px) {
-	  #pagecontainer {padding-top: 100px;}
-	}
-  </style>
-  {% endif %}
-
-
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="article">
   <meta property="fb:app_id" content="{{site.fbappid}}">
@@ -68,8 +43,8 @@
   <meta name="twitter:card" content="summary">
 
   <link rel="shortcut icon" href="{{ site.baseurl | prepend: site.url }}/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="{{ site.url }}/assets/img/icons/apple-touch-icon.png" />
-  <link rel="apple-touch-icon" sizes="57x57" href="{{ site.url to}}/assets/img/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" href="{{ site.baseurl | prepend: site.url }}/assets/img/icons/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl | prepend: site.url }}/assets/img/icons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl | prepend: site.url }}/assets/img/icons/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl | prepend: site.url }}/assets/img/icons/apple-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl | prepend: site.url }}/assets/img/icons/apple-icon-76x76.png">
@@ -87,5 +62,4 @@
   <meta name="theme-color" content="#0076fd">
   <link rel="canonical" href="{{ site.baseurl | prepend: site.url }}{{ page.url }}" />
 
-
-</head>
+  <script src="/assets/js/modules/auth.js" type="module" charset="utf-8" defer></script>

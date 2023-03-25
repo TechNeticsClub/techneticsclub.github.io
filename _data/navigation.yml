@@ -6,13 +6,17 @@ nav:
     section: events
 
   - title: "About"
-    section: timeline
+    section: about
 
-#  - title: "Team"
-#    section: team
+  - title: "Timeline"
+    section: timeline
 
   - title: "Contact"
     section: contact
+
+  - title: "Sign in"
+    section: sign
+    status: login
 
 #  - title: "blog"
 #    url: https://blog.2haas.com

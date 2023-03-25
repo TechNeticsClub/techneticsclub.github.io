@@ -14,18 +14,17 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
-		  {%- for link in site.data.navigation.nav -%}
-		  <li class="nav-item">
-		  {%- if link.url -%}
-		    <a class="nav-link js-scroll-trigger" href="{{ link.url }}">{{ link.title }}</a>
-		  {%- else if link.section -%}
-		    <a class="nav-link js-scroll-trigger" href="#{{ link.section }}">{{ link.title }}</a>
-		  {%- else -%}
-		    <a class="nav-link js-scroll-trigger" href="#">{{ link.title }}</a>
-		  {%- endif -%}
+        {%- for link in site.data.navigation.nav -%}
+          <li class="nav-item">
+            {%- if link.url -%}
+              <a class="nav-link js-scroll-trigger" href="{{ link.url }}">{{ link.title }}</a>
+            {%- else if link.section -%}
+              <a class="nav-link js-scroll-trigger" href="/#{{ link.section }}">{{ link.title }}</a>
+            {%- else -%}
+              <a class="nav-link js-scroll-trigger" href="#">{{ link.title }}</a>
+            {%- endif -%}
           </li>
-		  {% endfor %}
-          </li>
+        {% endfor %}
         </ul>
       </div>
     </div>
@@ -43,7 +42,7 @@
         <div class="intro-heading text-uppercase">{{ site.data.sitetext.header.text | markdownify }}</div>
 	  {%- endif -%}
 	  {%- if site.data.sitetext.header.button -%}
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ site.data.sitetext.header.buttonlink }}">{{ site.data.sitetext.header.button }}</a>
+        <button class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" id="authWith">{{ site.data.sitetext.header.button }}</button>
 	  {%- endif -%}
       </div>
     </div>

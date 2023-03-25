@@ -1,15 +1,17 @@
 ---
 layout: default
 ---
-{% include navheader.html %}
+{% include notloggedin/navheader.html %}
 
-{% include services.html %}
-{% include events_grid.html %}
-{% include timeline.html %}
+{% include notloggedin/services.html %}
+{% include notloggedin/events_grid.html %}
+{% include notloggedin/about.html %}
+{% include notloggedin/timeline.html %}
 
 {% comment %} 
-{% include team.html %}
+{% include notloggedin/team.html %}
 {% endcomment %} 
 
-{% include clients.html %}
-{% include contact.html %}
+{% include notloggedin/clients.html %}
+{% include notloggedin/contact.html %}
+{% include notloggedin/login.html %}

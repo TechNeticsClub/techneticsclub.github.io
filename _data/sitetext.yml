@@ -1,8 +1,8 @@
 header:
     title: Welcome to TechNetics!
     text: We make it happen, to change the future.
-    button: Tell Me More
-    buttonlink: "#timeline"
+    button: Let me in
+    buttonlink: "#sign"
 
 services:
     title: "Services"
@@ -29,8 +29,8 @@ events:
     closebutton: "Close Event"
 
 timeline:
-    title: "About"
-    text: "Who Are We?"
+    title: "Timeline"
+    text: "What we did?"
     section: timeline
     events:
       - title: "Our Humble Beginnings"
@@ -57,6 +57,12 @@ about:
     title: "About Us"
     text: "TechNetics is a multi-purpose community centered around mutual self-improvement in tech enthusiasts with a focus on aim and talent. Our motto: We make it happen ,to change the future"
     section: about
+
+sign:
+    title: "Sign In"
+    text: "Sign In to be a member of Technetics"
+    section: sign
+
 
 clients:
     section: clients
