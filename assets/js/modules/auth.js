@@ -24,7 +24,7 @@ const pagelogout = ()=>{
 };
 
 onAuthStateChanged(auth, (user) => {
-  if (user&&window.location.pathname == "/") window.location.replace("/dashboard/");
+  if (user&&window.location.pathname == "/") window.location.replace("/dashboard");
   if (user){
     // User is signed in
     document.getElementById("logout").addEventListener('click', pagelogout);
