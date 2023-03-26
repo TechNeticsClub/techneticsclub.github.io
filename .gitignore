@@ -7,3 +7,4 @@ Gemfile.lock
 *.scss.map
 unused
 bootstrap-reference.html
+firebase-debug.log
