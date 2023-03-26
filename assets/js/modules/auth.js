@@ -15,23 +15,13 @@ const googleauth = () => {
   signInWithRedirect(auth, google_provider);
 };
 
-const pagelogout = ()=>{
-  signOut(auth).then(() => {
-    window.location.replace('/');
-  }).catch((error) => {
-    console.log('An error happened.: \b'+ error)
-  });
-};
-
 onAuthStateChanged(auth, (user) => {
-  if (user&&window.location.pathname == "/") window.location.replace("/dashboard");
-  if (user){
-    // User is signed in
-    document.getElementById("logout").addEventListener('click', pagelogout);
-  }
+  if (user&&window.location.pathname == "/") window.location.replace("/dashboard/");
   if (!user) {
     // User is not signed in
-    document.getElementById("authWith").addEventListener('click', googleauth);
+    document.querySelectorAll("#authWith").forEach((btn) => {
+      btn.addEventListener('click', googleauth);
+    });
   }
   
 });

@@ -1,7 +1,7 @@
 header:
     title: Welcome to TechNetics!
     text: We make it happen, to change the future.
-    button: Let me in
+    button: sign in
     buttonlink: "#sign"
 
 services:

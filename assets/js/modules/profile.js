@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
 import { fbc } from "./firebase.js";
-import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-auth.js";
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-auth.js";
 
 
 // web app's Firebase configuration
@@ -21,7 +21,7 @@ onAuthStateChanged(auth, (user) => {
     <center>
       <img src="${user.photoURL}" alt="${user.displayName}" width="70px" height="70px" style="border:2px solid black;border-radius:50%;"/>
       <h1>Hello ${user.displayName}</h1><br>
-      <button class="btn btn-danger text-uppercase" id="logout">Logout</button>
+      <a class="btn btn-danger text-uppercase" href="/logout/">Logout</a>
     </center>
     `;
   }

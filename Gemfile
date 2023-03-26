@@ -5,3 +5,4 @@ gem "jekyll"
 gem "bundler"
 gem "rake"
 gem "webrick"
+ gem 'wdm', '>= 0.1.0' if Gem.win_platform?
